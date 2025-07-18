@@ -236,14 +236,7 @@
         </p>
         {% endif %}
 
-        {% if eshort_url %}
-        <p>
-            Shortened URL:
-            <a href="{{ full_url }}">https://de/{{ eshort_url }}</a>
-        </p>
-        {% elif error %}
-          <p style="color: red;">{{ error }}</p>
-        {% endif %}
+        
 
         <div class="result-section" id="resultSection">
             <h3 style="color: #333; margin-bottom: 10px;">Your shortened URL:</h3>
