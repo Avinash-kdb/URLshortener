@@ -3,7 +3,10 @@ import mysql.connector
 import hashlib 
 import base64 
  
-app = Flask(__name__) 
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app)
+
  
 # Database Configuration 
 DB_CONFIG = { 
